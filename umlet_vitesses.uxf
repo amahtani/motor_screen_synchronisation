@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>500</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Simulation
+--
+Vi_MAX : int
+Vi_MIN : int 
+
+Mi_MAX : double
+Mi_MIN : double
+
+variationVitesse 0.005 : double
+variationAngulaire 0.01 : double
+
+DELAIS_CHANGE_COMPORTEMENT 1 : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>490</y>
+      <w>440</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Comportements
+--
+tirageComportementAleatoire(enum Comportement&amp;)
+--
+EcranPivot_Positif
+EcranPivot_Negatif
+PetitsCercles_Positif
+PetitsCercles_Negatif
+GrandsCercles_Positif
+GrandsCercles_Negatif
+MouvementsAmples_PivotRapide_Positif
+MouvementsAmples_PivotRapide_Negatif
+PetitesOscillations
+GrandesOscillations
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>540</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Vitesse
+--
+Gestion du mouvement selon le 
+comportement choisi en 3 étapes
+--
+Montée de la vitesse
+Régime stationnaire
+Descente de la vitesse </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>380</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>monteeDescente
+--
+Fonctions génériques
+--
+monteeVitesse()
+descenteVitesse()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>600</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>590</y>
+      <w>50</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>450</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1080</x>
+      <y>590</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>530</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
